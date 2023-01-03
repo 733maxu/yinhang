@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <script src="./fonts/iconfont.js"></script>
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/pub.css">
+    <style>
+        .background .header{
+            display: flex;  
+            margin-top: 4px;   
+            height: 25px;
+            position: absolute;
+            width: 100%;
+            top:0;
+            left: 0; 
+        }
+        .background img{
+            width: 100%;
+        }
+        .header>span{  
+            font-size: 18px;
+            padding: 0 4px;   
+            color: #333;
+            line-height: 20px; 
+        } 
+        .header>div{   
+            flex-grow: 1;   
+            display: flex;   
+            background-color:rgb(206, 146, 109);
+            border-radius: 16px;   
+            padding-right: 5px;  
+        }
+        .header>div span{
+            font-size: 18px;
+            margin: 0 4px;
+            line-height: 22px; 
+        }
+        .header p{
+            font-size: 10px;
+        }
+        .header input{  
+            background-color: rgb(206, 146, 109);   
+            border: none;    
+            flex-grow: 1;   
+            outline: none;   
+            line-height: 22px; 
+        }
+        .jbgn .shouye{
+            margin: 10px;
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 10px; 
+            text-align: center;
+            padding: 5px;
+            background-color: #fff;
+        }
+        .jbgn .icon{
+            width: 3em;
+            height: 3em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        .shouye>li{
+            padding-top: 10px;
+            width: 25%;
+            line-height: 30px;  /* 行高决定它的高度 */
+            font-size: 12px;
+            text-align: center;
+            background-color: #fff;
+            font-weight: bold;
+            color: #000;
+        }
+        .background .jbgn{
+            left: 0;
+            top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <img src="./img/sybj.jpg">
+    <div class="header">
+        <span class="iconfont icon-choujiang1"><p>抽奖</p></span>
+        <div class="sdh"> 
+            <span class="iconfont icon-sousuo3"></span>  
+            <input type="text" placeholder="养老专区"> 
+            <span class="iconfont icon-yuyin"></span>
+        </div>
+        <span class="iconfont icon-zhuanzhang"><p>版本</p></span>
+        <span class="iconfont icon-kefu2"><p>客服</p></span>
+        <span class="iconfont icon-xiaoxi"><p>消息</p></span>
+    </div>
+    <div class="jbgn">
+        <ul class="shouye">
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-wodezhanghu"></use>
+                </svg>
+                <p>我的账户</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhuanzhang11"></use>
+                </svg>
+                <p>转账</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-mingxichaxun"></use>
+                </svg>
+                <p>明细查询</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-saoyisao"></use>
+                </svg>
+                <p>扫一扫</p>
+            </li>
+    </div> 
+    <script>
+        var rearch = document.querySelector(".sdh");
+        rearch.onclick =()=>{
+        window.location.href = "./rearch.html";        
+    }
+    </script>
+</div>
+</body>
+</html>
+
